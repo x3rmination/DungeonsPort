@@ -1,0 +1,27 @@
+{
+    "itemGroup.dungeonsport": "Dungeons Port Mod Items",
+
+
+//items
+    "item.dungeonsport.axe": "Axe",
+
+    "item.dungeonsport.firebrand": "Firebrand",
+
+//MISC
+
+    "item.dungeonsport.key": "Dungeon Key",
+
+//materials
+
+    "item.dungeonsport.fiery_ingot": "Fiery Ingot",
+
+//toolparts
+
+    "item.dungeonsport.reinforced_stick": "Reinforced Stick",
+    "item.dungeonsport.handle": "Handle",
+    "item.dungeonsport.exquisite_handle": "Exquisite Handle",
+
+    "block.dungeonsport.dirty_stone": "Dirty Stone"
+
+
+}

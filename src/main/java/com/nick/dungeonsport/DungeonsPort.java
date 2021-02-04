@@ -1,6 +1,9 @@
 package com.nick.dungeonsport;
 
 
+import com.nick.dungeonsport.core.init.BlockInit;
+import com.nick.dungeonsport.core.init.ItemInit;
+import com.nick.dungeonsport.core.init.ToolsInit;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -17,7 +20,7 @@ public class DungeonsPort {
 
     public static final Logger LOGGER = LogManager.getLogger();
 
-    public static final String MOD_ID = "firstmod";
+    public static final String MOD_ID = "dungeonsport";
     public static final String MINECRAFT_ID = "minecraft";
 
     public DungeonsPort() {
@@ -25,9 +28,9 @@ public class DungeonsPort {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        //BlockInit.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        //ItemInit.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        //ToolsInit.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        BlockInit.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ItemInit.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ToolsInit.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         MinecraftForge.EVENT_BUS.register(this);
 
