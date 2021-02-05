@@ -19,8 +19,8 @@ public class EntityInit {
 
 
     public static final RegistryObject<EntityType<TestZombieEntity>> TEST_ZOMBIE = ENTITIES.register("test_zombie",
-            () -> EntityType.Builder.create(TestZombieEntity::new, EntityClassification.CREATURE)
-                    .size(0.5f,0.5f)
+            () -> EntityType.Builder.create(TestZombieEntity::new, EntityClassification.MONSTER)
+                    .size(1f,1f)
                     .build(new ResourceLocation(DungeonsPort.MOD_ID, "test_zombie").toString()));
 
 
