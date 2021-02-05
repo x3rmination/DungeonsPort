@@ -14,6 +14,7 @@ import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.world.World;
 
 import java.util.UUID;
 
@@ -23,16 +24,25 @@ public class FireAxe extends AxeItem {
         super(tier, attackDamageIn, attackSpeedIn, builder);
     }
 
-//apply fire aspect on first use
+
+    @Override
+    public void onCreated(ItemStack stack, World worldIn, PlayerEntity playerIn)  {
+        super.onCreated(stack, worldIn, playerIn);
+        if (true) {
+            stack.addEnchantment(Enchantments.FIRE_ASPECT,3);
+        }
+    }
 
     @Override
     public boolean onLeftClickEntity(ItemStack stack, PlayerEntity player,Entity entity) {
         super.onLeftClickEntity(stack, player, entity);
         if (true) {
             entity.setFire(5);
-            stack.addEnchantment(Enchantments.FIRE_ASPECT,3);
+
         }
         return false;
+
+
 
     }
 

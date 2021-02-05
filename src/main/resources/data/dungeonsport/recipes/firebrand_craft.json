@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "dd",
+    "Dd",
+    "/ "
+  ],
+  "key": {
+    "d": {
+      "item": "dungeonsport:fiery_ingot"
+    },
+    "D": {
+      "item": "dungeonsport:exquisite_handle"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "dungeonsport:firebrand",
+    "count": 1
+  }
+}
