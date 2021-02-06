@@ -20,7 +20,8 @@ public class EntityInit {
 
     public static final RegistryObject<EntityType<TestZombieEntity>> TEST_ZOMBIE = ENTITIES.register("test_zombie",
             () -> EntityType.Builder.create(TestZombieEntity::new, EntityClassification.MONSTER)
-                    .size(1f,1f)
+                    //hitbox
+                    .size(0.5F,2)
                     .build(new ResourceLocation(DungeonsPort.MOD_ID, "test_zombie").toString()));
 
 
