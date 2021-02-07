@@ -1,6 +1,7 @@
 package com.nick.dungeonsport.common.items;
 
 import com.nick.dungeonsport.DungeonsPort;
+import com.nick.dungeonsport.common.interfaces.IExtendedReach;
 import com.nick.dungeonsport.core.init.ItemInit;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
@@ -38,11 +39,8 @@ public class FireAxe extends AxeItem {
         super.onLeftClickEntity(stack, player, entity);
         if (true) {
             entity.setFire(5);
-
         }
         return false;
-
-
 
     }
 

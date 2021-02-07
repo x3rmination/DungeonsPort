@@ -17,6 +17,8 @@ public enum ItemTiers implements IItemTier {
 
     }),
 
+
+
     BASEAXE(3, 500, 4.5f, 8.0f, 15, () -> {
 
         return Ingredient.fromItems(Items.IRON_INGOT);
