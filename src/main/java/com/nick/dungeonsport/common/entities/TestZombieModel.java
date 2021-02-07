@@ -15,25 +15,20 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 
-public class TestZombieModel extends EntityModel<TestZombieEntity> {
+public class TestZombieModel<T extends TestZombieEntity> extends ZombieModel<TestZombieEntity> {
 
-    public ModelRenderer body;
-    public ModelRenderer head;
-    public TestZombieModel() {
-        body = new ModelRenderer(this, 0, 0);
-        body.addBox(-3, 10, -3, 1, 1, 1);
-        body = new ModelRenderer(this, 10, 10);
-        body.addBox(-3, 20, -3, 2, 4, 2);
+    public TestZombieModel(float modelSize, boolean p_i1168_2_) {
+        this(modelSize, 0.0F, 64, p_i1168_2_ ? 32 : 64);
     }
+    protected TestZombieModel(float modelSize, float yOffsetIn, int textureWidthIn, int textureHeightIn) {
+        super(modelSize, yOffsetIn, textureWidthIn, textureHeightIn);
+    }
+
 
     @Override
-    public void setRotationAngles(TestZombieEntity testZombieEntity, float v, float v1, float v2, float v3, float v4) {
-
+    public boolean isAggressive(TestZombieEntity entityIn) {
+        return false;
     }
 
-    @Override
-    public void render(MatrixStack matrixStackIn, IVertexBuilder bufferIn, int packedLightIn, int packedOverlayIn, float red, float green, float blue, float alpha) {
-        body.render(matrixStackIn, bufferIn, packedLightIn, packedOverlayIn, red, green, blue, alpha);
-        head.render(matrixStackIn, bufferIn, packedLightIn, packedOverlayIn, red, green, blue, alpha);
-    }
+
 }

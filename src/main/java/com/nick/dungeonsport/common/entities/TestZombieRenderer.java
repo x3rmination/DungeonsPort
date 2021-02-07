@@ -12,12 +12,14 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 import javax.annotation.Nullable;
 
-public class TestZombieRenderer extends MobRenderer<TestZombieEntity, TestZombieModel> {
+public class TestZombieRenderer extends AbstractZombieRenderer<TestZombieEntity, TestZombieModel<TestZombieEntity>> {
 
-    private static final ResourceLocation TEXTURE = new ResourceLocation(DungeonsPort.MOD_ID, "assets/dungeonsport/textures/entity/test_zombie.png");
+    private static final ResourceLocation TEXTURE = new ResourceLocation(DungeonsPort.MOD_ID, "textures/entity/test_zombie.png");
 
     public TestZombieRenderer(EntityRendererManager renderManagerIn) {
-        super(renderManagerIn, new TestZombieModel(),0.5F);
+        //super(renderManagerIn, new TestZombieModel(1,true),0.5F);
+        //super(renderManagerIn, new ZombieModel<>(0.0F, false));
+        super(renderManagerIn, new TestZombieModel<>(0.0F, false), new TestZombieModel<>(0.5F, true), new TestZombieModel<>(1.0F, true));
     }
 
     @Nullable
