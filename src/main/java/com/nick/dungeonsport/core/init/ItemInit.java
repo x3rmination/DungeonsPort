@@ -27,6 +27,9 @@ public class ItemInit {
     public static final RegistryObject<Item> EXQUISITE_HANDLE = ITEMS.register("exquisite_handle",
             () -> new Item(new Item.Properties().group(ModItemGroup.instance)));
 
+    public static final RegistryObject<Item> ENCHANTED_SHARD = ITEMS.register("enchanted_shard",
+            () -> new Item(new Item.Properties().group(ModItemGroup.instance).rarity(Rarity.UNCOMMON)));
+
     public static final RegistryObject<FireAxe> FIREBRAND = ITEMS.register("firebrand",
             () -> new FireAxe(ItemTiers.FIERY_IRON,1, -3, new Item.Properties().group(ItemInit.ModItemGroup.instance).setNoRepair()));
 

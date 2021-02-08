@@ -16,7 +16,7 @@ public class ToolsInit {
             DungeonsPort.MOD_ID);
 
     public static final RegistryObject<AxeItem> AXE = ITEMS.register("axe",
-            () -> new AxeItem(ItemTiers.BASEAXE,1, -3, new Item.Properties().group(ItemInit.ModItemGroup.instance).setNoRepair()));
+            () -> new AxeItem(ItemTiers.BASE_AXE,1, -3, new Item.Properties().group(ItemInit.ModItemGroup.instance).setNoRepair()));
 
 
 

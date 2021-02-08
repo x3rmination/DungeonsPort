@@ -8,13 +8,14 @@
     "item.dungeonsport.firebrand": "Firebrand",
 
 //MISC
-
     "item.dungeonsport.key": "Dungeon Key",
-
+    "item.dungeonsport.enchanted_shard": "Enchanted Shard",
 //materials
 
     "item.dungeonsport.fiery_ingot": "Fiery Ingot",
 
+//mobs
+    "entity.dungeonsport.enchanted_zombie": "Enchanted Zombie",
 //toolparts
 
     "item.dungeonsport.reinforced_stick": "Reinforced Stick",

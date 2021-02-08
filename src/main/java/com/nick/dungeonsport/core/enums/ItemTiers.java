@@ -17,9 +17,14 @@ public enum ItemTiers implements IItemTier {
 
     }),
 
+    HIGHLAND_AXE(5,1200,5.5f,12.0f,30, () -> {
+
+        return Ingredient.fromItems(Items.IRON_INGOT);
+    }),
 
 
-    BASEAXE(3, 500, 4.5f, 8.0f, 15, () -> {
+
+    BASE_AXE(3, 500, 4.5f, 8.0f, 15, () -> {
 
         return Ingredient.fromItems(Items.IRON_INGOT);
 

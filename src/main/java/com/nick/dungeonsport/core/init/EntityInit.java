@@ -1,10 +1,9 @@
 package com.nick.dungeonsport.core.init;
 
 import com.nick.dungeonsport.DungeonsPort;
-import com.nick.dungeonsport.common.entities.TestZombieEntity;
+import com.nick.dungeonsport.common.entities.EnchantedZombieEntity;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -19,11 +18,11 @@ public class EntityInit{
     }
 
 
-    public static final RegistryObject<EntityType<TestZombieEntity>> TEST_ZOMBIE = ENTITIES.register("test_zombie",
-            () -> EntityType.Builder.create(TestZombieEntity::new, EntityClassification.MONSTER)
+    public static final RegistryObject<EntityType<EnchantedZombieEntity>> ENCHANTED_ZOMBIE = ENTITIES.register("enchanted_zombie",
+            () -> EntityType.Builder.create(EnchantedZombieEntity::new, EntityClassification.MONSTER)
                     //hitbox
                     .size(0.6F,2)
-                    .build(new ResourceLocation(DungeonsPort.MOD_ID, "test_zombie").toString()));
+                    .build(new ResourceLocation(DungeonsPort.MOD_ID, "enchanted_zombie").toString()));
 
 
 

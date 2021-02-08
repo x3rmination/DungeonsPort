@@ -1,8 +1,8 @@
 package com.nick.dungeonsport;
 
 
-import com.nick.dungeonsport.common.entities.TestZombieEntity;
-import com.nick.dungeonsport.common.entities.TestZombieRenderer;
+import com.nick.dungeonsport.common.entities.EnchantedZombieEntity;
+import com.nick.dungeonsport.common.entities.EnchantedZombieRenderer;
 import com.nick.dungeonsport.core.init.BlockInit;
 import com.nick.dungeonsport.core.init.EntityInit;
 import com.nick.dungeonsport.core.init.ItemInit;
@@ -45,7 +45,7 @@ public class DungeonsPort {
 
     private void setup(final FMLCommonSetupEvent event) {
         DeferredWorkQueue.runLater(() -> {
-            GlobalEntityTypeAttributes.put(EntityInit.TEST_ZOMBIE.get(), TestZombieEntity.setCustomAttributes().create());
+            GlobalEntityTypeAttributes.put(EntityInit.ENCHANTED_ZOMBIE.get(), EnchantedZombieEntity.setCustomAttributes().create());
         });
     }
 
@@ -53,7 +53,7 @@ public class DungeonsPort {
 
     @SubscribeEvent
     public void setupClient(final FMLClientSetupEvent event) {
-        RenderingRegistry.registerEntityRenderingHandler(EntityInit.TEST_ZOMBIE.get(), TestZombieRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(EntityInit.ENCHANTED_ZOMBIE.get(), EnchantedZombieRenderer::new);
     }
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event) {}

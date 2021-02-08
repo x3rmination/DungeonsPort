@@ -34,7 +34,7 @@ import javax.annotation.Nullable;
 import java.util.UUID;
 import java.util.function.Predicate;
 
-public class TestZombieEntity extends ZombieEntity {
+public class EnchantedZombieEntity extends ZombieEntity {
 
     private static final UUID BABY_SPEED_BOOST_ID = UUID.fromString("B9766B59-9566-4402-BC1F-2EE2A276D836");
     private static final AttributeModifier BABY_SPEED_BOOST = new AttributeModifier(BABY_SPEED_BOOST_ID, "Baby speed boost", 0.5D, AttributeModifier.Operation.MULTIPLY_BASE);
@@ -49,7 +49,7 @@ public class TestZombieEntity extends ZombieEntity {
     private int inWaterTime;
     private int drownedConversionTime;
 
-    public TestZombieEntity(EntityType<? extends ZombieEntity> type, World worldIn) {
+    public EnchantedZombieEntity(EntityType<? extends ZombieEntity> type, World worldIn) {
         super(type, worldIn);
     }
 
