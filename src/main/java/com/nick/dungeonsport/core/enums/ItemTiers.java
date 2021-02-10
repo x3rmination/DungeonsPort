@@ -13,20 +13,19 @@ public enum ItemTiers implements IItemTier {
 
     FIERY_IRON(4, 1000, 5.5f, 10.0f, 30, () -> {
 
-        return Ingredient.fromItems(ItemInit.FIERY_INGOT.get());
+        return Ingredient.fromItems(ItemInit.ENCHANTED_SHARD.get());
 
     }),
 
-    HIGHLAND_AXE(5,1200,5.5f,12.0f,30, () -> {
+    HIGHLAND_AXE(5,1200,5.5f,10.0f,30, () -> {
 
-        return Ingredient.fromItems(Items.IRON_INGOT);
+        return Ingredient.fromItems(ItemInit.ENCHANTED_SHARD.get());
     }),
 
 
+    BASE_AXE(3, 500, 4.5f, 7.0f, 15, () -> {
 
-    BASE_AXE(3, 500, 4.5f, 8.0f, 15, () -> {
-
-        return Ingredient.fromItems(Items.IRON_INGOT);
+        return Ingredient.fromItems(ItemInit.ENCHANTED_SHARD.get());
 
     });
 

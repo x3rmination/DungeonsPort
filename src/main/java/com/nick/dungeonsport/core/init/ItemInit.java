@@ -2,6 +2,7 @@ package com.nick.dungeonsport.core.init;
 
 import com.nick.dungeonsport.DungeonsPort;
 import com.nick.dungeonsport.common.items.FireAxe;
+import com.nick.dungeonsport.common.items.Highland_Axe;
 import com.nick.dungeonsport.core.enums.ItemTiers;
 import net.minecraft.item.*;
 import net.minecraftforge.common.ToolType;
@@ -32,6 +33,9 @@ public class ItemInit {
 
     public static final RegistryObject<FireAxe> FIREBRAND = ITEMS.register("firebrand",
             () -> new FireAxe(ItemTiers.FIERY_IRON,1, -3, new Item.Properties().group(ItemInit.ModItemGroup.instance).setNoRepair()));
+
+    public static final RegistryObject<Highland_Axe> HIGHLAND_AXE = ITEMS.register("highland_axe",
+            () -> new Highland_Axe(ItemTiers.HIGHLAND_AXE, 1, -2.75F, new Item.Properties().group(ItemInit.ModItemGroup.instance).setNoRepair()));
 
     //Block Items
     public static final RegistryObject<BlockItem> DIRTY_STONE = ITEMS.register("dirty_stone",

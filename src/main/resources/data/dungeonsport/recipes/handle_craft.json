@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #/",
+    "#i#",
+    "/# "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:leather"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "dungeonsport:handle",
+    "count": 1
+  }
+}
