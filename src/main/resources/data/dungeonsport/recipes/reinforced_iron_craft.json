@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "dungeonsport:unprocessed_reinforced_iron"
+  },
+  "result": "dungeonsport:reinforced_iron",
+  "experience": 0.1,
+  "cookingtime": 200
+}

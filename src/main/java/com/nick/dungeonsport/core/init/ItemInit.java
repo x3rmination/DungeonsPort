@@ -37,6 +37,13 @@ public class ItemInit {
     public static final RegistryObject<Highland_Axe> HIGHLAND_AXE = ITEMS.register("highland_axe",
             () -> new Highland_Axe(ItemTiers.HIGHLAND_AXE, 1, -2.75F, new Item.Properties().group(ItemInit.ModItemGroup.instance).setNoRepair()));
 
+    public static final RegistryObject<Item> REINFORCED_IRON = ITEMS.register( "reinforced_iron",
+            () -> new Item(new Item.Properties().group(ModItemGroup.instance)));
+
+    public static final RegistryObject<Item> UNPROCESSED_REINFORCED_IRON = ITEMS.register( "unprocessed_reinforced_iron",
+            () -> new Item(new Item.Properties().group(ModItemGroup.instance)));
+
+
     //Block Items
     public static final RegistryObject<BlockItem> DIRTY_STONE = ITEMS.register("dirty_stone",
             () -> new BlockItem(BlockInit.DIRTY_STONE.get(), new Item.Properties().group(ModItemGroup.instance)));

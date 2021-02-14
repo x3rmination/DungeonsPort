@@ -22,7 +22,6 @@ public enum ItemTiers implements IItemTier {
         return Ingredient.fromItems(ItemInit.ENCHANTED_SHARD.get());
     }),
 
-
     BASE_AXE(3, 500, 4.5f, 7.0f, 15, () -> {
 
         return Ingredient.fromItems(ItemInit.ENCHANTED_SHARD.get());
