@@ -24,14 +24,14 @@ public class Highland_Axe extends AxeItem {
     @Override
     public boolean onLeftClickEntity(ItemStack stack, PlayerEntity player, Entity entity) {
         super.onLeftClickEntity(stack, player, entity);
-        if (entity instanceof LivingEntity) {
-            entity.setSprinting(false);
-            ((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, 10, 10));
-            ((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WEAKNESS, 10, 10));
+        if (Math.random() < 0.20) {
+            if (entity instanceof LivingEntity) {
+                entity.setSprinting(false);
+                ((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, 40, 10));
+                ((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.WEAKNESS, 35, 10));
 
 
-
-
+            }
         }
         return false;
     }

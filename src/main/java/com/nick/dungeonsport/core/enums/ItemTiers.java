@@ -11,18 +11,33 @@ public enum ItemTiers implements IItemTier {
 
     //Harvest Level, Durability, Efficiency, Attack Damage, Enchantability, Repair Material
 
-    FIERY_IRON(4, 1000, 5.5f, 10.0f, 30, () -> {
+    FIERY_IRON(4, 1000, 5.5f, 8.0f, 30, () -> {
 
         return Ingredient.fromItems(ItemInit.ENCHANTED_SHARD.get());
 
     }),
 
-    HIGHLAND_AXE(5,1200,5.5f,10.0f,30, () -> {
+    HIGHLAND_AXE(5,1200,5.5f,8.0f,30, () -> {
 
         return Ingredient.fromItems(ItemInit.ENCHANTED_SHARD.get());
     }),
 
-    BASE_AXE(3, 500, 4.5f, 7.0f, 15, () -> {
+    BATTLESTAFF(2,600,3.5f,3.0f,10, () -> {
+
+        return Ingredient.fromItems(ItemInit.ENCHANTED_SHARD.get());
+    }),
+
+    BATTLESTAFF_OF_TERROR(2,1000,3.5f,4.0f,10, () -> {
+
+        return Ingredient.fromItems(ItemInit.ENCHANTED_SHARD.get());
+    }),
+
+    GROWING_STAFF(2,1000,3.5f,4.0f,10, () -> {
+
+        return Ingredient.fromItems(ItemInit.ENCHANTED_SHARD.get());
+    }),
+
+    BASE_AXE(3, 500, 4.5f, 6.0f, 15, () -> {
 
         return Ingredient.fromItems(ItemInit.ENCHANTED_SHARD.get());
 

@@ -1,13 +1,18 @@
 {
     "itemGroup.dungeonsport": "Dungeons Port Mod Items",
 
-
-//items
+//weapons
     "item.dungeonsport.axe": "Axe",
 
     "item.dungeonsport.firebrand": "Firebrand",
 
     "item.dungeonsport.highland_axe": "Highland Axe",
+
+    "item.dungeonsport.battlestaff": "Battlestaff",
+
+
+//items
+
 
     "item.dungeonsport.unprocessed_reinforced_iron": "Unprocessed Reinforced Iron",
 

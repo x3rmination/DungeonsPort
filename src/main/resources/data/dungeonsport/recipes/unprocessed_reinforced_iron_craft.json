@@ -1,12 +1,23 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "minecraft:diamond"
-  },
-  "addition": {
-    "item": "minecraft:iron_block"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#I#",
+    "IDI",
+    "#I#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_nugget"
+    },
+    "I": {
+      "item": "minecraft:iron_ore"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
   },
   "result": {
-    "item": "dungeonsport:unprocessed_reinforced_iron"
+    "item": "dungeonsport:unprocessed_reinforced_iron",
+    "count": 1
   }
 }

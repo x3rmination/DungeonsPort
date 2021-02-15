@@ -18,6 +18,9 @@ public class ToolsInit {
     public static final RegistryObject<AxeItem> AXE = ITEMS.register("axe",
             () -> new AxeItem(ItemTiers.BASE_AXE,1, -3, new Item.Properties().group(ItemInit.ModItemGroup.instance).setNoRepair()));
 
+    public static final RegistryObject<SwordItem> BATTLESTAFF = ITEMS.register("battlestaff",
+            () -> new SwordItem(ItemTiers.BATTLESTAFF,1, -2, new Item.Properties().group(ItemInit.ModItemGroup.instance).setNoRepair()));
+
 
 
 

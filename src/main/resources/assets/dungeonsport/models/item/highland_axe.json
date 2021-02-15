@@ -1,6 +1,12 @@
 {
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "dungeonsport:item/highland_axe"
-  }
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "dungeonsport:item/highland_axe"
+	},
+	"display": {
+		"gui": {
+			"translation": [-0.25, 0, 0]
+		}
+	}
 }

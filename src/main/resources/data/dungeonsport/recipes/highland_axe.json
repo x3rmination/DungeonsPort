@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#E",
+    "D#",
+    "/ "
+  ],
+  "key": {
+    "#": {
+      "item": "dungeonsport:reinforced_iron"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "D": {
+      "item": "dungeonsport:exquisite_handle"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "dungeonsport:highland_axe",
+    "count": 1
+  }
+}

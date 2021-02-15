@@ -1,6 +1,42 @@
 {
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "dungeonsport:item/firebrand"
-  }
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "dungeonsport:item/firebrand"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 39],
+			"translation": [-0.35, 13, 2.25],
+			"scale": [2, 2, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -39],
+			"translation": [0.35, 13, 2.25],
+			"scale": [2, 2, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [22, -88, 50],
+			"translation": [4, 11, 0.5],
+			"scale": [2, 2, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [22, 88, -50],
+			"translation": [4, 11, 0.5],
+			"scale": [2, 2, 1]
+		},
+		"ground": {
+			"translation": [7, 14, 0],
+			"scale": [2, 2, 1]
+		},
+		"gui": {
+			"translation": [5.75, 5.75, 0],
+			"scale": [1.6, 1.6, 1]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [-6, 7.25, -0.25],
+			"scale": [2, 2, 1]
+		}
+	}
 }

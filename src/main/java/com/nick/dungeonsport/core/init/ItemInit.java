@@ -1,7 +1,9 @@
 package com.nick.dungeonsport.core.init;
 
 import com.nick.dungeonsport.DungeonsPort;
+import com.nick.dungeonsport.common.items.Battlestaff_of_terror;
 import com.nick.dungeonsport.common.items.FireAxe;
+import com.nick.dungeonsport.common.items.Growing_staff;
 import com.nick.dungeonsport.common.items.Highland_Axe;
 import com.nick.dungeonsport.core.enums.ItemTiers;
 import net.minecraft.item.*;
@@ -36,6 +38,12 @@ public class ItemInit {
 
     public static final RegistryObject<Highland_Axe> HIGHLAND_AXE = ITEMS.register("highland_axe",
             () -> new Highland_Axe(ItemTiers.HIGHLAND_AXE, 1, -2.75F, new Item.Properties().group(ItemInit.ModItemGroup.instance).setNoRepair()));
+
+    public static final RegistryObject<Battlestaff_of_terror> BATTLESTAFF_OF_TERROR = ITEMS.register("battlestaff_of_terror",
+            () -> new Battlestaff_of_terror(ItemTiers.BATTLESTAFF_OF_TERROR, 1.5F, -2.75F, new Item.Properties().group(ItemInit.ModItemGroup.instance).setNoRepair()));
+
+    public static final RegistryObject<Growing_staff> GROWING_STAFF = ITEMS.register("battlestaff_of_terror",
+            () -> new Growing_staff(ItemTiers.GROWING_STAFF, 1.5F, -2.75F, new Item.Properties().group(ItemInit.ModItemGroup.instance).setNoRepair()));
 
     public static final RegistryObject<Item> REINFORCED_IRON = ITEMS.register( "reinforced_iron",
             () -> new Item(new Item.Properties().group(ModItemGroup.instance)));
