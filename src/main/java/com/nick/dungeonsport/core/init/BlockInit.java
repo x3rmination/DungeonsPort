@@ -2,6 +2,7 @@ package com.nick.dungeonsport.core.init;
 
 import com.nick.dungeonsport.DungeonsPort;
 import com.nick.dungeonsport.DungeonsPort;
+import com.nick.dungeonsport.common.blocks.Barrel;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -22,4 +23,11 @@ public class BlockInit {
                     harvestTool(ToolType.SHOVEL).
                     harvestLevel(-1).
                     sound(SoundType.GROUND))));
+
+    public static final RegistryObject<Barrel> BARREL = BLOCKS.register("barrel",
+            () -> new Barrel((AbstractBlock.Properties.create(Material.WOOD).
+                    hardnessAndResistance(1.5F).
+                    harvestTool(ToolType.AXE).
+                    harvestLevel(-1).
+                    sound(SoundType.WOOD))));
 }

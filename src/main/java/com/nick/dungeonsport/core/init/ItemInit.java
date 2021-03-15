@@ -42,7 +42,7 @@ public class ItemInit {
     public static final RegistryObject<Battlestaff_of_terror> BATTLESTAFF_OF_TERROR = ITEMS.register("battlestaff_of_terror",
             () -> new Battlestaff_of_terror(ItemTiers.BATTLESTAFF_OF_TERROR, 1.5F, -2.75F, new Item.Properties().group(ItemInit.ModItemGroup.instance).setNoRepair()));
 
-    public static final RegistryObject<Growing_staff> GROWING_STAFF = ITEMS.register("battlestaff_of_terror",
+    public static final RegistryObject<Growing_staff> GROWING_STAFF = ITEMS.register("growing_staff",
             () -> new Growing_staff(ItemTiers.GROWING_STAFF, 1.5F, -2.75F, new Item.Properties().group(ItemInit.ModItemGroup.instance).setNoRepair()));
 
     public static final RegistryObject<Item> REINFORCED_IRON = ITEMS.register( "reinforced_iron",
@@ -56,7 +56,11 @@ public class ItemInit {
     public static final RegistryObject<BlockItem> DIRTY_STONE = ITEMS.register("dirty_stone",
             () -> new BlockItem(BlockInit.DIRTY_STONE.get(), new Item.Properties().group(ModItemGroup.instance)));
 
+    public static final RegistryObject<BlockItem> BARREL = ITEMS.register("barrel",
+            () -> new BlockItem(BlockInit.BARREL.get(), new Item.Properties().group(ModItemGroup.instance)));
 
+
+    //Group
     public static class ModItemGroup extends ItemGroup {
         public static final ModItemGroup instance = new ModItemGroup(ItemGroup.GROUPS.length, "dungeonsport");
         private ModItemGroup(int index, String label) {

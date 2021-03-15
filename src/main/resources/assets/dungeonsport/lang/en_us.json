@@ -10,6 +10,10 @@
 
     "item.dungeonsport.battlestaff": "Battlestaff",
 
+    "item.dungeonsport.battlestaff_of_terror": "Battlestaff Of Terror",
+
+    "item.dungeonsport.growing_staff": "Growing Staff",
+
 
 //items
 
@@ -33,7 +37,10 @@
     "item.dungeonsport.handle": "Handle",
     "item.dungeonsport.exquisite_handle": "Exquisite Handle",
 
-    "block.dungeonsport.dirty_stone": "Dirty Stone"
+
+//blocks
+    "block.dungeonsport.dirty_stone": "Dirty Stone",
+    "block.dungeonsport.barrel": "Barrel"
 
 
 }
