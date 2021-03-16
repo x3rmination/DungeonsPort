@@ -41,6 +41,17 @@ public enum ItemTiers implements IItemTier {
 
         return Ingredient.fromItems(ItemInit.ENCHANTED_SHARD.get());
 
+    }),
+
+    CLAYMORE(2, 500, 4.5f, 6.0f, 15, () -> {
+
+        return Ingredient.fromItems(ItemInit.ENCHANTED_SHARD.get());
+
+    }),
+
+    BROADSWORD(2,1000,3.5f,4.0f,10, () -> {
+
+        return Ingredient.fromItems(ItemInit.ENCHANTED_SHARD.get());
     });
 
 

@@ -63,7 +63,7 @@ public class EnchantedZombieEntity extends ZombieEntity {
 
     protected void registerGoals() {
         //this.goalSelector.addGoal(4, new ZombieEntity.AttackTurtleEggGoal(this, 1.0D, 3));
-        this.goalSelector.addGoal(8, new LookAtGoal(this, PlayerEntity.class, 8.0F));
+        this.goalSelector.addGoal(8, new LookAtGoal(this, PlayerEntity.class, 10.0F));
         this.goalSelector.addGoal(8, new LookRandomlyGoal(this));
         this.applyEntityAI();
     }
@@ -232,11 +232,10 @@ public class EnchantedZombieEntity extends ZombieEntity {
     public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
         return MonsterEntity.func_234295_eP_()
                 .createMutableAttribute(Attributes.FOLLOW_RANGE, 35.0D)
-                .createMutableAttribute(Attributes.MOVEMENT_SPEED, (double) 0.23F)
-                .createMutableAttribute(Attributes.ATTACK_DAMAGE, 3.0D)
+                .createMutableAttribute(Attributes.MOVEMENT_SPEED, (double) 0.24F)
                 .createMutableAttribute(Attributes.ARMOR, 2.0D)
                 .createMutableAttribute(Attributes.ZOMBIE_SPAWN_REINFORCEMENTS)
-                .createMutableAttribute(Attributes.MAX_HEALTH, 20.0D)
+                .createMutableAttribute(Attributes.MAX_HEALTH, 35.0D)
                 .createMutableAttribute(Attributes.ATTACK_DAMAGE, 5.0D);
     }
 }

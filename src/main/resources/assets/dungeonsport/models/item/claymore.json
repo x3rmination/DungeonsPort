@@ -1,0 +1,13 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "dungeonsport:item/claymore"
+  },
+  "display": {
+    "gui": {
+      "translation": [0, 0, 0],
+      "scale": [1.2, 1.2, 1.2]
+    }
+  }
+}

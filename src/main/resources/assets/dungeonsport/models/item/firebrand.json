@@ -352,14 +352,6 @@
 			"rotation": [-40, -90, 0],
 			"translation": [0.5, 1.25, 1.25]
 		},
-		"firstperson_righthand": {
-			"rotation": [-180, 90, 140],
-			"translation": [0.5, 2, 0.5]
-		},
-		"firstperson_lefthand": {
-			"rotation": [-180, -80, -140],
-			"translation": [2.25, 2, 0.5]
-		},
 		"ground": {
 			"translation": [0, 4.25, 0]
 		},

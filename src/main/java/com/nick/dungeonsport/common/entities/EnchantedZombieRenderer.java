@@ -14,7 +14,7 @@ public class EnchantedZombieRenderer extends AbstractZombieRenderer<EnchantedZom
     public EnchantedZombieRenderer(EntityRendererManager renderManagerIn) {
         //super(renderManagerIn, new TestZombieModel(1,true),0.5F);
         //super(renderManagerIn, new ZombieModel<>(0.0F, false));
-        super(renderManagerIn, new EnchantedZombieModel<>(0.0F, false), new EnchantedZombieModel<>(0.5F, true), new EnchantedZombieModel<>(1.0F, true));
+        super(renderManagerIn, new EnchantedZombieModel<>(0.0F, false), new EnchantedZombieModel<>(0.5F, true), new EnchantedZombieModel<>(10.0F, true));
     }
 
     @Nullable
